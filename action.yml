@@ -1,0 +1,24 @@
+name: Linear Commit Workflow State
+description: Move Linear issues to a workflow state based on a commit message
+branding:
+  icon: arrow-right-circle
+  color: purple
+inputs:
+  ghToken:
+    description: GitHub API key
+    required: true
+  linearToken:
+    description: Linear API key
+    required: true
+  linearTeamId:
+    description: Linear Team ID for where your issues are located
+    required: true
+  toStateId:
+    description: Move to state id
+    required: true
+  commitMessage:
+    description: Commit message
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
