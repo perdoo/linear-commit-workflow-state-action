@@ -1,4 +1,4 @@
-# Linear Commit Workflow Status Action
+# Linear Commit Workflow State Action
 
 Move Linear issues to a workflow state based on a commit message.
 
